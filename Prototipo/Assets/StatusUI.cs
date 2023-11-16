@@ -1,4 +1,4 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +8,7 @@ public class StatusUI : MonoBehaviour
     public healthText;
 
     private CharacterStatus status;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -27,3 +28,4 @@ public class StatusUI : MonoBehaviour
         healBackground.fillAmount = (float)value / maxValue;
     }
 }
+*/
