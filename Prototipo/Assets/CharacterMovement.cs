@@ -8,7 +8,7 @@ public class CharacterMovement : MonoBehaviour
     public float turnSmoothTime = 0.1f;
     private float turnSmoothVelocity;
 
-    public float jumpSpeed = 2.0f;
+    public float jumpSpeed = 5.0f;
     public float gravity = 10.0f;
     private Vector3 jumpForce = Vector3.zero;
 
@@ -43,7 +43,7 @@ public class CharacterMovement : MonoBehaviour
             jumpForce.y = jumpSpeed;
 
             // Set animator jump trigger
-            animator.SetTrigger("isJumping");
+            animator.SetTrigger("Jumping");
         }
 
         // Set animator grounded parameter
