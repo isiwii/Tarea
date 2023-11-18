@@ -4,50 +4,91 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
-    public CharacterController characterController;
     public float speed = 5.0f;
-    public float jumpSpeed = 5.0f;
     public float turnSmoothTime = 0.1f;
-    private float turnSmoothVel;
+    private float turnSmoothVelocity;
 
+    public float jumpSpeed = 2.0f;
+    public float gravity = 10.0f;
     private Vector3 jumpForce = Vector3.zero;
-    public float gravity = 10f;
-    public Camera cam;
 
-    // Start is called before the first frame update
-    void Start()
+    public float coyoteTime = 0.2f;
+    private float coyoteCurrent = 0;
+
+    [Header("Movimiento")]
+    public CharacterController controller;
+    public Transform cam;
+
+    [Header("Animaciones")]
+    public Animator animator;
+
+    private void Start()
     {
-        
+        // Hide cursor
+        Cursor.visible = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Update()
     {
-        //Get axis horizontal and vertical
-        float H_axis = Input.GetAxis("Horizontal");
-        float V_axis = Input.GetAxis("Vertical");
-        Vector3 dir = new Vector3(H_axis, 0, V_axis).normalized;
+        // Get input from keyboard
+        var H_axis = Input.GetAxis("Horizontal");
+        var V_axis = Input.GetAxis("Vertical");
+        var dir = new Vector3(H_axis, 0, V_axis).normalized;
 
-        if(dir.magnitude >= 0.1f)
+        // get jump input
+        var jump = Input.GetButtonDown("Jump");
+        if ((controller.isGrounded || coyoteCurrent <= coyoteTime) && jump)
         {
-            float angle = (Mathf.Atan2(dir.x, dir.y) * Mathf.Rad2Deg) + cam.transform.eulerAngles.y;
-            float angle2 = Mathf.SmoothDampAngle(transform.eulerAngles.y,angle,ref turnSmoothVel, turnSmoothTime);
+            // Set jump force
+            jumpForce.y = jumpSpeed;
 
-            transform.rotation = Quaternion.Euler(0f,angle2,0f);
-
-            var dir2 = Quaternion.Euler(0f, angle, 0f) * Vector3.forward;
-            characterController.Move(dir * speed * Time.deltaTime);
+            // Set animator jump trigger
+            animator.SetTrigger("Jumping");
         }
 
-        jumpForce.y -= gravity * Time.deltaTime; 
+        // Set animator grounded parameter
+        animator.SetBool("Grounded", controller.isGrounded);
 
-        bool jumpBtn = Input.GetButtonDown("Jump");
-        if(jumpBtn)
+        coyoteCurrent = 0;
+
+        // Apply gravity
+        if(!controller.isGrounded) // si no estoy en el suelo
         {
-            jumpForce.y = jumpSpeed * Time.deltaTime;
-            
+            coyoteCurrent += Time.deltaTime;
+
+            jumpForce.y -= gravity * Time.deltaTime;
+        }
+        controller.Move(jumpForce * Time.deltaTime);
+
+        if (dir.magnitude >= 0.1f)
+        {
+            // Set animator running parameter to true
+            animator.SetBool("isWalking", true);
+
+            // Rotate the character to the direction of movement
+            var targetAngle = (Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg) + cam.eulerAngles.y;
+            var angle = Mathf.SmoothDampAngle(transform.eulerAngles.y,targetAngle, ref turnSmoothVelocity, turnSmoothTime);
+            transform.rotation = Quaternion.Euler(0f, angle, 0f);
+
+            // Move the character
+            var moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+            controller.Move(moveDir * speed * Time.deltaTime);
+        }
+        else
+        {
+            // Set animator running parameter to false
+            animator.SetBool("isWalking", false);
         }
 
-        characterController.Move(jumpForce * Time.deltaTime);
+        
+       if (Input.GetKey("x"))
+       {
+        speed = 10.0f;
+       }
+
+       else
+       {
+        speed = 5.0f;
+       }
     }
 }
