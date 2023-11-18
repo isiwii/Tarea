@@ -19,7 +19,10 @@ ModelImporter:
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nClip 'Armature|ArmatureAction' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'Colita3.R' is inbetween humanoid
+      transforms and has rotation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -31,7 +34,36 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|ArmatureAction
+      takeName: Armature|ArmatureAction
+      internalID: 4781951162920444690
+      firstFrame: 0
+      lastFrame: 63
+      wrapMode: 0
+      orientationOffsetY: 90
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -79,8 +111,363 @@ ModelImporter:
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
-    human: []
-    skeleton: []
+    human:
+    - boneName: Cadera
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Pierna1.L
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Pierna1.R
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Pierna2.L
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Pierna2.R
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Pie1.L
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Pie1.R
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Espalda
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Cuello
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Colita1.L
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Colita1.R
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Colita2.L
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Colita2.R
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Colita3.L
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Colita4.R
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Colita4.L
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Colita5.R
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Pie2.L
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Pie2.R
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Cabeza
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: walk(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Armature
+      parentName: walk(Clone)
+      position: {x: -0, y: 0, z: 1.3848106}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cadera
+      parentName: Armature
+      position: {x: -0, y: 0, z: 0.015715165}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Espalda
+      parentName: Cadera
+      position: {x: -0, y: 0.0014045691, z: 0}
+      rotation: {x: 0.0058820033, y: -0.000022466842, z: -0.003799236, w: 0.9999755}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Brazo1.L
+      parentName: Espalda
+      position: {x: 0.00031775466, y: 0.001270845, z: -0.0016408486}
+      rotation: {x: 0.9461522, y: -0.20802829, z: 0.058757816, w: -0.24097243}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1.0000001}
+    - name: Brazo2.L
+      parentName: Brazo1.L
+      position: {x: 3.8417054e-11, y: 0.0026752993, z: 7.729977e-10}
+      rotation: {x: -0.07389678, y: 0.08360513, z: 0.17869759, w: 0.97755647}
+      scale: {x: 0.9999999, y: 1, z: 0.99999994}
+    - name: Brazo3.L
+      parentName: Brazo2.L
+      position: {x: 0.0000000011129304, y: 0.0025570106, z: -4.4703483e-10}
+      rotation: {x: -0.073378, y: 0.024050312, z: 0.08054917, w: 0.99375504}
+      scale: {x: 1.0000001, y: 1, z: 0.99999994}
+    - name: Brazo3.L_end
+      parentName: Brazo3.L
+      position: {x: -0, y: 0.0021687732, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Brazo1.R
+      parentName: Espalda
+      position: {x: 3.488374e-10, y: 0.0013452636, z: 0.0014772048}
+      rotation: {x: 0.9054073, y: 0.33096698, z: 0.08470828, w: 0.25203767}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.9999999}
+    - name: Brazo2.R
+      parentName: Brazo1.R
+      position: {x: -0.0000000010756775, y: 0.002675299, z: 4.842877e-10}
+      rotation: {x: 0.07423857, y: -0.06456533, z: 0.13202563, w: 0.9863515}
+      scale: {x: 1, y: 0.9999998, z: 0.99999994}
+    - name: Brazo3.R
+      parentName: Brazo2.R
+      position: {x: 1.7927959e-10, y: 0.00255701, z: 2.2351741e-10}
+      rotation: {x: 0.07313652, y: 0.0000000014007331, z: -0.00000018279592, w: 0.99732196}
+      scale: {x: 1, y: 0.99999994, z: 0.9999999}
+    - name: Brazo3.R_end
+      parentName: Brazo3.R
+      position: {x: -0, y: 0.0021687725, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cuello
+      parentName: Espalda
+      position: {x: 6.768444e-13, y: 0.0014870258, z: -5.6513726e-12}
+      rotation: {x: -0.015495666, y: 1.8120951e-12, z: 0.000000003826098, w: 0.99987996}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cabeza
+      parentName: Cuello
+      position: {x: 1.04773785e-11, y: 0.0009098137, z: 1.1228849e-11}
+      rotation: {x: 0.018594204, y: 3.2512972e-12, z: -0.0000000045447854, w: 0.9998271}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Colita1.L
+      parentName: Cabeza
+      position: {x: 0.0010969888, y: 0.003312244, z: -0.0021255144}
+      rotation: {x: 0.982051, y: 0.186517, z: -0.027044373, w: -0.0074717714}
+      scale: {x: 1.0000038, y: 1.0000001, z: 1}
+    - name: Colita2.L
+      parentName: Colita1.L
+      position: {x: -6.61239e-10, y: 0.0011382794, z: -1.8626451e-11}
+      rotation: {x: 0.01216922, y: 0.018945789, z: 0.37931243, w: 0.92499465}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: Colita3.L
+      parentName: Colita2.L
+      position: {x: -8.5681673e-10, y: 0.0009366975, z: -1.1408701e-10}
+      rotation: {x: 0.11443184, y: 0.0027709836, z: 0.061704636, w: 0.9915091}
+      scale: {x: 1, y: 0.9999999, z: 0.99999994}
+    - name: Colita4.L
+      parentName: Colita3.L
+      position: {x: 8.6613e-10, y: 0.0011782476, z: 3.259629e-11}
+      rotation: {x: -0.034031507, y: 0.08069803, z: 0.37038448, w: 0.92474055}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: Colita5.L
+      parentName: Colita4.L
+      position: {x: 4.377216e-10, y: 0.0013735878, z: -3.7252902e-11}
+      rotation: {x: 0.06950655, y: -0.056646537, z: -0.2340822, w: 0.9680731}
+      scale: {x: 0.9999998, y: 1, z: 0.99999994}
+    - name: Colita6.L
+      parentName: Colita5.L
+      position: {x: 5.0291415e-10, y: 0.001189321, z: 3.352761e-10}
+      rotation: {x: 0.083963096, y: -0.22771299, z: -0.43010825, w: 0.86954236}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: Colita6.L_end
+      parentName: Colita6.L
+      position: {x: -0, y: 0.00079521036, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Colita1.R
+      parentName: Cabeza
+      position: {x: 0.0010242715, y: 0.003383953, z: 0.0020781367}
+      rotation: {x: 0.97853583, y: 0.20252419, z: -0.01834134, w: 0.033394508}
+      scale: {x: 1.0000001, y: 0.9999998, z: 1.0000001}
+    - name: Colita2.R
+      parentName: Colita1.R
+      position: {x: -2.3283064e-10, y: 0.0011382744, z: -1.7927959e-10}
+      rotation: {x: 0.01703021, y: -0.010443131, z: 0.37912574, w: 0.92512953}
+      scale: {x: 0.9999998, y: 0.99999976, z: 0.99999994}
+    - name: Colita3.R
+      parentName: Colita2.R
+      position: {x: 7.264316e-10, y: 0.0009366998, z: -1.3969838e-10}
+      rotation: {x: -0.10925116, y: -0.013258557, z: 0.07047096, w: 0.9914244}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Colita4.R
+      parentName: Colita3.R
+      position: {x: -5.9604643e-10, y: 0.0011782467, z: -5.401671e-10}
+      rotation: {x: 0.06440953, y: -0.07468313, z: 0.36632603, w: 0.92524546}
+      scale: {x: 1, y: 0.99999994, z: 0.9999999}
+    - name: Colita5.R
+      parentName: Colita4.R
+      position: {x: -1.3969838e-10, y: 0.0013735901, z: 1.8626451e-11}
+      rotation: {x: -0.087331004, y: 0.05549943, z: -0.22803313, w: 0.96813947}
+      scale: {x: 0.9999998, y: 0.9999999, z: 1}
+    - name: Colita6.R
+      parentName: Colita5.R
+      position: {x: -2.9802322e-10, y: 0.0011893226, z: -7.4505804e-11}
+      rotation: {x: -0.14034088, y: 0.17964655, z: -0.41514814, w: 0.880729}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: Colita6.R_end
+      parentName: Colita6.R
+      position: {x: -0, y: 0.0007952101, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Pierna1.L
+      parentName: Cadera
+      position: {x: 0.000060683276, y: -0.0006307399, z: -0.0012465364}
+      rotation: {x: 0.6395768, y: 0.21816769, z: 0.69012314, w: -0.25898728}
+      scale: {x: 0.99999994, y: 1.0000021, z: 1.0000032}
+    - name: Pierna2.L
+      parentName: Pierna1.L
+      position: {x: -4.6566126e-11, y: 0.004469864, z: 7.9162416e-10}
+      rotation: {x: 0.0028134256, y: -0.025794268, z: -0.0051961364, w: 0.9996498}
+      scale: {x: 0.9999999, y: 0.99999976, z: 0.9999999}
+    - name: Pie1.L
+      parentName: Pierna2.L
+      position: {x: 6.519258e-11, y: 0.005364881, z: -5.0291415e-10}
+      rotation: {x: -0.61240137, y: -0.007668792, z: 0.005985692, w: 0.79048723}
+      scale: {x: 0.9999999, y: 1, z: 0.99999994}
+    - name: Pie2.L
+      parentName: Pie1.L
+      position: {x: 1.3969838e-10, y: 0.0014187183, z: -4.1443854e-10}
+      rotation: {x: -0.21850811, y: 0.008773353, z: 0.006547392, w: 0.97577375}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Pie2.L_end
+      parentName: Pie2.L
+      position: {x: -0, y: 0.0010904771, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Pierna1.R
+      parentName: Cadera
+      position: {x: -0, y: -0.0005260515, z: 0.0008781422}
+      rotation: {x: 0.6985552, y: -0.109643795, z: 0.69286764, w: 0.14118566}
+      scale: {x: 0.99999994, y: 0.999996, z: 0.999975}
+    - name: Pierna2.R
+      parentName: Pierna1.R
+      position: {x: 1.2107193e-10, y: 0.004469864, z: 1.0886367e-10}
+      rotation: {x: -0.029580446, y: -0.0007399273, z: 0.020302532, w: 0.9993559}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: Pie1.R
+      parentName: Pierna2.R
+      position: {x: -1.5133991e-11, y: 0.005365573, z: 3.1583794e-10}
+      rotation: {x: -0.7574258, y: -0.00040072048, z: -0.00006497088, w: 0.65292114}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Pie2.R
+      parentName: Pie1.R
+      position: {x: -8.1490726e-12, y: 0.0014187658, z: 5.0407833e-10}
+      rotation: {x: -0.034951594, y: 0.00000009994573, z: -0.00014738773, w: 0.99938905}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: Pie2.R_end
+      parentName: Pie2.R
+      position: {x: -0, y: 0.0010904771, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Torus.002
+      parentName: walk(Clone)
+      position: {x: -0, y: 0.73328495, z: 1.5029703}
+      rotation: {x: -0.7062844, y: 0.03409326, z: -0.03409327, w: 0.7062844}
+      scale: {x: -8.34249, y: -7.4774995, z: -16.381012}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5

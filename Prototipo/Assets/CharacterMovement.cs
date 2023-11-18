@@ -43,7 +43,7 @@ public class CharacterMovement : MonoBehaviour
             jumpForce.y = jumpSpeed;
 
             // Set animator jump trigger
-            animator.SetTrigger("Jumping");
+            animator.SetTrigger("isJumping");
         }
 
         // Set animator grounded parameter
