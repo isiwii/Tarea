@@ -8,6 +8,8 @@ TagManager:
   - barrell
   - Barrell
   - Box
+  - pumkin
+  - pumpkin
   layers:
   - Default
   - TransparentFX
