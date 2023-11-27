@@ -9,11 +9,11 @@ C:\Program Files\Unity 2021.3.23f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker1
+AssetImportWorker5
 -projectPath
 C:/Users/Isi/Documents/GitHub/Tarea/Prototipo
 -logFile
-Logs/AssetImportWorker1.log
+Logs/AssetImportWorker5.log
 -srvPort
 54636
 Successfully changed project path to: C:/Users/Isi/Documents/GitHub/Tarea/Prototipo
@@ -47,11 +47,11 @@ C:/Users/Isi/Documents/GitHub/Tarea/Prototipo
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [17192] Host "[IP] 192.168.0.17 [Port] 0 [Flags] 2 [Guid] 1833038981 [EditorId] 1833038981 [Version] 1048832 [Id] WindowsEditor(7,Isi-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [16156] Host "[IP] 192.168.0.17 [Port] 0 [Flags] 2 [Guid] 1126694928 [EditorId] 1126694928 [Version] 1048832 [Id] WindowsEditor(7,Isi-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [17192] Host "[IP] 192.168.0.17 [Port] 0 [Flags] 2 [Guid] 1833038981 [EditorId] 1833038981 [Version] 1048832 [Id] WindowsEditor(7,Isi-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [16156] Host "[IP] 192.168.0.17 [Port] 0 [Flags] 2 [Guid] 1126694928 [EditorId] 1126694928 [Version] 1048832 [Id] WindowsEditor(7,Isi-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 149.54 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 96.07 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.23f1 (213b516bf396)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.3.23f1/Editor/Data/Resources/UnitySubsystems
@@ -67,89 +67,89 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity 2021.3.23f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity 2021.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity 2021.3.23f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56824
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56228
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 2021.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.013479 seconds.
+Registered in 0.008446 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 123.89 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 98.76 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.187 seconds
+- Completed reload, in  0.785 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1188ms)
-		BeginReloadAssembly (170ms)
+	ReloadAssembly (785ms)
+		BeginReloadAssembly (102ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (822ms)
-			LoadAssemblies (164ms)
+		EndReloadAssembly (563ms)
+			LoadAssemblies (98ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (213ms)
+			SetupTypeCache (128ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (48ms)
-			SetupLoadedEditorAssemblies (470ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (334ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
+				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (124ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (252ms)
-				ProcessInitializeOnLoadMethodAttributes (81ms)
+				RefreshPlugins (99ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (170ms)
+				ProcessInitializeOnLoadMethodAttributes (53ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.009115 seconds.
+Registered in 0.006601 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Isi\Documents\GitHub\Tarea\Prototipo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Isi\Documents\GitHub\Tarea\Prototipo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 163.92 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 94.41 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.433 seconds
+- Completed reload, in  1.388 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2434ms)
-		BeginReloadAssembly (234ms)
+	ReloadAssembly (1389ms)
+		BeginReloadAssembly (174ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
-			ReleaseScriptingObjects (1ms)
-			CreateAndSetChildDomain (33ms)
-		EndReloadAssembly (2015ms)
-			LoadAssemblies (166ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (1087ms)
+			LoadAssemblies (121ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (607ms)
+			SetupTypeCache (259ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (120ms)
-			SetupLoadedEditorAssemblies (1026ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (627ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (164ms)
-				BeforeProcessingInitializeOnLoad (161ms)
-				ProcessInitializeOnLoadAttributes (631ms)
-				ProcessInitializeOnLoadMethodAttributes (42ms)
-				AfterProcessingInitializeOnLoad (16ms)
+				RefreshPlugins (94ms)
+				BeforeProcessingInitializeOnLoad (109ms)
+				ProcessInitializeOnLoadAttributes (388ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (12ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 1.34 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3755 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 57 unused Assets / (1.6 MB). Loaded Objects now: 4240.
 Memory consumption went from 165.5 MB to 163.8 MB.
-Total: 9.443100 ms (FindLiveObjects: 0.763100 ms CreateObjectMapping: 1.045500 ms MarkObjects: 7.164500 ms  DeleteObjects: 0.468300 ms)
+Total: 3.797700 ms (FindLiveObjects: 0.386800 ms CreateObjectMapping: 0.242200 ms MarkObjects: 2.752700 ms  DeleteObjects: 0.415200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -163,40 +163,52 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 95691.447163 seconds.
-  path: Assets/Assets/Handpainted_Grass_and_Ground_Textures/Textures/Snow/snow_dark_step_005.png
-  artifactKey: Guid(cdf5143628bf7444ea06f268c1cfddb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Handpainted_Grass_and_Ground_Textures/Textures/Snow/snow_dark_step_005.png using Guid(cdf5143628bf7444ea06f268c1cfddb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91e92113229d298740dfd0bde87bdc9f') in 0.144069 seconds 
+  Time since last request: 97666.033227 seconds.
+  path: Assets/New Terrain 2.asset
+  artifactKey: Guid(d716d0466a100f949ae6e41d92a812d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain 2.asset using Guid(d716d0466a100f949ae6e41d92a812d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78634907e23cdd971da1fead4767fad9') in 0.088109 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Assets/Handpainted_Grass_and_Ground_Textures/Textures/Snow/snow_step_008.png
-  artifactKey: Guid(c74775dcd81327747a3906d145705271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Handpainted_Grass_and_Ground_Textures/Textures/Snow/snow_step_008.png using Guid(c74775dcd81327747a3906d145705271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8554489286086b170e80600c5ba84b2') in 0.027428 seconds 
+  Time since last request: 0.000049 seconds.
+  path: Assets/NewLayer 3.terrainlayer
+  artifactKey: Guid(5827093fd4a7f0b43b051475dce9b03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NewLayer 3.terrainlayer using Guid(5827093fd4a7f0b43b051475dce9b03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b0ac82f3dd5ad23ab26a8ce37a03850') in 0.101189 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Assets/Handpainted_Grass_and_Ground_Textures/Textures/Snow/snow_step_004.png
-  artifactKey: Guid(35896bdd91471e340a9d5fcf6a3a0d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Handpainted_Grass_and_Ground_Textures/Textures/Snow/snow_step_004.png using Guid(35896bdd91471e340a9d5fcf6a3a0d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ea2c21501ee6897c861f4d7d3f8b2bf') in 0.023969 seconds 
+  Time since last request: 49.164049 seconds.
+  path: Assets/Assets/Handpainted_Grass_and_Ground_Textures/Textures/Grass/Grass_swamp_dark/Grass_swamp_dark_up.png
+  artifactKey: Guid(62a8bc25af5c388458823063b0415e1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Handpainted_Grass_and_Ground_Textures/Textures/Grass/Grass_swamp_dark/Grass_swamp_dark_up.png using Guid(62a8bc25af5c388458823063b0415e1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b3819273c2de710bce4f1a8885462f3') in 0.070807 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Assets/Handpainted_Grass_and_Ground_Textures/Textures/Snow/snow_super_dark_step_001.png
-  artifactKey: Guid(b8afc2645b654e647b6e6262f6ff887d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Handpainted_Grass_and_Ground_Textures/Textures/Snow/snow_super_dark_step_001.png using Guid(b8afc2645b654e647b6e6262f6ff887d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c0c85dbf314799de282e1196ca5c139') in 0.018676 seconds 
+  Time since last request: 0.000142 seconds.
+  path: Assets/Assets/Handpainted_Grass_and_Ground_Textures/Textures/Grass/Grass_swamp_lighted/Grass_swamp_lighted_right.png
+  artifactKey: Guid(b9cc1b4e12ee8504b8820d2f834b2ca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Handpainted_Grass_and_Ground_Textures/Textures/Grass/Grass_swamp_lighted/Grass_swamp_lighted_right.png using Guid(b9cc1b4e12ee8504b8820d2f834b2ca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c7aa8a25a300e2d897f0cdeb437d834') in 0.031420 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Assets/Handpainted_Grass_and_Ground_Textures/Textures/Snow/snow_step_003.png
-  artifactKey: Guid(d2b861fad968c574c9312f5ce9c8fbb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Handpainted_Grass_and_Ground_Textures/Textures/Snow/snow_step_003.png using Guid(d2b861fad968c574c9312f5ce9c8fbb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99a400e290ba1efbe3c302ce73304f90') in 0.018317 seconds 
+  Time since last request: 0.000039 seconds.
+  path: Assets/Assets/Handpainted_Grass_and_Ground_Textures/Textures/Grass/Grass_swamp_lighted/Grass_swamp_lighted_up.png
+  artifactKey: Guid(388f2f1cf74926b4b87216b23523d64d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Handpainted_Grass_and_Ground_Textures/Textures/Grass/Grass_swamp_lighted/Grass_swamp_lighted_up.png using Guid(388f2f1cf74926b4b87216b23523d64d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e656e2edcde5e8d6fb4977744b5c6843') in 0.040941 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Assets/Handpainted_Grass_and_Ground_Textures/Textures/Snow/snow_dark_step_007.png
-  artifactKey: Guid(fd1b4f2bb67053b47a64ebec95973537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Handpainted_Grass_and_Ground_Textures/Textures/Snow/snow_dark_step_007.png using Guid(fd1b4f2bb67053b47a64ebec95973537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed35da6c622b56b25a284b4ca6ff2764') in 0.014795 seconds 
+  Time since last request: 0.000024 seconds.
+  path: Assets/Assets/Handpainted_Grass_and_Ground_Textures/Textures/Grass/Grass_swamp_normal/Grass_swamp_normal_left.png
+  artifactKey: Guid(23dbddfba2811ae4bbbcbcffa26a5eda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Handpainted_Grass_and_Ground_Textures/Textures/Grass/Grass_swamp_normal/Grass_swamp_normal_left.png using Guid(23dbddfba2811ae4bbbcbcffa26a5eda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33a7ea87d50b4858fe9b4bcba68207f5') in 0.030804 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Assets/Handpainted_Grass_and_Ground_Textures/Textures/Grass/Grass_swamp_normal/Grass_swamp_normal_right.png
+  artifactKey: Guid(b3fa58fc580ef1b4f8cd17e8a49af808) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Handpainted_Grass_and_Ground_Textures/Textures/Grass/Grass_swamp_normal/Grass_swamp_normal_right.png using Guid(b3fa58fc580ef1b4f8cd17e8a49af808) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10d98142e11ae69c3c9bdf27b13f1ecd') in 0.024594 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Assets/Handpainted_Grass_and_Ground_Textures/Textures/Grass/Grass_swamp_lighted/Grass_swamp_lighted_left.png
+  artifactKey: Guid(83dde0a0a7b84a748abb0f5e31467c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Handpainted_Grass_and_Ground_Textures/Textures/Grass/Grass_swamp_lighted/Grass_swamp_lighted_left.png using Guid(83dde0a0a7b84a748abb0f5e31467c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aa2cfd45bbc121690ebffa86de031da') in 0.024777 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
