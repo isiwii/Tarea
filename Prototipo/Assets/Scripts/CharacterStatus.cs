@@ -14,6 +14,11 @@ public class CharacterStatus : MonoBehaviour, IDamageble
 
     public Transform lastRespawnPoint;
 
+    public void Start()
+    {
+        
+    }
+
     public void AddDamage(int damage)
     {
         health -= Mathf.Max(damage, 0);

@@ -10,6 +10,7 @@ TagManager:
   - Box
   - pumkin
   - pumpkin
+  - PatrolSpots
   layers:
   - Default
   - TransparentFX

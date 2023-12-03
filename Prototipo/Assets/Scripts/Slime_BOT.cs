@@ -10,19 +10,19 @@ public SphereCollider colider;
 public float radius = 10f;
 public float speed = 5f;
 
-public Transform pivot;
+/*public Transform pivot;
 public float shootSpeed = 5f;
-private float shootCurrent = 0f;
+private float shootCurrent = 0f;*/
 
 [Header("Prefs")]
 public GameObject bulletPref;
 
 
-void Shoot()
+/*void Shoot()
 {
 GameObject bullet = Instantiate(bulletPref, pivot.position,pivot.rotation);
 shootCurrent = 0f;
-}
+}*/
 
 // Update is called once per frame
 void Update()
@@ -36,14 +36,14 @@ var direction = target.position - transform.position;
 direction.y = 0;
 
 //shoot timing
-if (shootCurrent >= shootSpeed)
+/*if (shootCurrent >= shootSpeed)
 {
 Shoot();
 }
 shootCurrent += Time.deltaTime;
 
 this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), 0.1f);
-
+*/
 
 }
 }
