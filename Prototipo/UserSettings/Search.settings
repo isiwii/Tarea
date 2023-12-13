@@ -7,7 +7,7 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
-	"last_search.DA949528" = "raycast"
+	"last_search.DA949528" = "trail"
 	"OpenInspectorPreview.DA949528" = "0"
 	"currentGroup.DA949528" = "all"
 }
@@ -56,10 +56,10 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"t"
 	"r"
 	"c"
 	"an"
-	"t"
 	"a"
 ]
 searchItemFavorites = [
