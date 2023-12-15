@@ -7,8 +7,8 @@ public class Slime_BOT : MonoBehaviour
 private Transform target;
 
 public SphereCollider colider;
-public float radius = 10f;
-public float speed = 5f;
+public float radius = 0.5f;
+public float speed = 3f;
 
 /*public Transform pivot;
 public float shootSpeed = 5f;
